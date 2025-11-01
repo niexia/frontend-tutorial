@@ -1,6 +1,6 @@
 ---
 page: true
-title: fe tutorial
+title: frontend-tutorial
 ---
 
 <script setup>

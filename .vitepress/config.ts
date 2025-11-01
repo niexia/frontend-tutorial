@@ -58,8 +58,8 @@ export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig,
 
   lang: 'zh-CN',
-  title: 'FE Tutorial',
-  description: 'FE Tutorial - 前端学习指南，包含 JavaScript, CSS, HTML, Webpack, Vite, React, Vue, Node.js, Deno, 数据结构和算法，计算机网络，前端工程化等。',
+  title: 'frontend-tutorial',
+  description: 'frontend-tutorial - 前端学习指南，包含 JavaScript, CSS, HTML, Webpack, Vite, React, Vue, Node.js, Deno, 数据结构和算法，计算机网络，前端工程化等。',
   srcDir: 'src',
   srcExclude: ['tutorial/**/description.md'],
   scrollOffset: 'header',
@@ -67,8 +67,8 @@ export default defineConfigWithTheme<ThemeConfig>({
 
   head: [
     ['meta', { name: 'keywords', content: '前端，学习，笔记，JavaScript, CSS, HTML, Webpack, Vite, React, Vue, Node.js, Deno, 数据结构和算法，计算机网络，前端工程化' }],
-    ['meta', { property: 'og:title', content: 'FE Tutorial' }],
-    ['meta', { property: 'og:description', content: 'FE Tutorial - 前端学习指南，包含 JavaScript, CSS, HTML, Webpack, Vite, React, Vue, Node.js, Deno, 数据结构和算法，计算机网络，前端工程化等。' }],
+    ['meta', { property: 'og:title', content: 'frontend-tutorial' }],
+    ['meta', { property: 'og:description', content: 'frontend-tutorial - 前端学习指南，包含 JavaScript, CSS, HTML, Webpack, Vite, React, Vue, Node.js, Deno, 数据结构和算法，计算机网络，前端工程化等。' }],
     ['meta', { property: 'og:url', content: 'https://niexia.github.io/frontend-tutorial/' }],
     ['meta', { property: 'og:image', content: 'https://niexia.github.io/frontend-tutorial/logo.svg' }],
     ['meta', { name: 'theme-color', content: '#3c8772' }],
