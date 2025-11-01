@@ -1,1 +1,0 @@
-import{_ as a,o as t,c as r}from"./app.a72c81aa.js";const e=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"algo/string-matching/BM.md"}');const n=a({name:"algo/string-matching/BM.md"},[["render",function(a,e,n,s,i,o){return t(),r("div")}]]);export{e as __pageData,n as default};
