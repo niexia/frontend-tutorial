@@ -1,10 +1,7 @@
-import fs from 'fs'
-import path from 'path'
 import { defineConfigWithTheme } from 'vitepress'
 import type { Config as ThemeConfig } from '@vue/theme'
 import baseConfig from '@vue/theme/config'
 import { headerPlugin } from './headerMdPlugin'
-import { jobsPlugin } from './jobsMdPlugin'
 import sideBar from './sidebar'
 
 const nav: ThemeConfig['nav'] = [
@@ -89,14 +86,6 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
     [
       'script',
-      {},
-      fs.readFileSync(
-        path.resolve(__dirname, './inlined-scripts/restorePreference.js'),
-        'utf-8'
-      )
-    ],
-    [
-      'script',
       {
         src: 'https://cdn.usefathom.com/script.js',
         'data-site': 'XNOLWPLB',
@@ -111,20 +100,6 @@ export default defineConfigWithTheme<ThemeConfig>({
     sidebar,
     // Placeholder of the i18n config for @vuejs-translations.
     // i18n,
-
-    algolia: {
-      indexName: 'vuejs',
-      appId: 'ML0LEBN7FQ',
-      apiKey: 'f49cbd92a74532cc55cfbffa5e5a7d01',
-      searchParameters: {
-        facetFilters: ['version:v3']
-      }
-    },
-
-    carbonAds: {
-      code: 'CEBDT27Y',
-      placement: 'vuejsorg'
-    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/niexia/' },
@@ -146,7 +121,7 @@ export default defineConfigWithTheme<ThemeConfig>({
 
   markdown: {
     config(md) {
-      md.use(headerPlugin).use(jobsPlugin)
+      md.use(headerPlugin)
     }
   },
 
