@@ -57,15 +57,20 @@ export const sidebar: ThemeConfig['sidebar'] = sideBar
 export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig,
 
-  lang: 'en-US',
-  title: 'fe tutorial',
-  description: 'fe tutorial - 前端学习笔记',
+  lang: 'zh-CN',
+  title: 'FE Tutorial',
+  description: 'FE Tutorial - 前端学习指南，包含 JavaScript, CSS, HTML, Webpack, Vite, React, Vue, Node.js, Deno, 数据结构和算法，计算机网络，前端工程化等。',
   srcDir: 'src',
   srcExclude: ['tutorial/**/description.md'],
   scrollOffset: 'header',
-  base: '/fe-tutorial/',
+  base: '/frontend-tutorial/',
 
   head: [
+    ['meta', { name: 'keywords', content: '前端，学习，笔记，JavaScript, CSS, HTML, Webpack, Vite, React, Vue, Node.js, Deno, 数据结构和算法，计算机网络，前端工程化' }],
+    ['meta', { property: 'og:title', content: 'FE Tutorial' }],
+    ['meta', { property: 'og:description', content: 'FE Tutorial - 前端学习指南，包含 JavaScript, CSS, HTML, Webpack, Vite, React, Vue, Node.js, Deno, 数据结构和算法，计算机网络，前端工程化等。' }],
+    ['meta', { property: 'og:url', content: 'https://niexia.github.io/frontend-tutorial/' }],
+    ['meta', { property: 'og:image', content: 'https://niexia.github.io/frontend-tutorial/logo.svg' }],
     ['meta', { name: 'theme-color', content: '#3c8772' }],
     ['meta', { name: 'twitter:site', content: '@niexia' }],
     ['meta', { name: 'twitter:card', content: 'summary' }],
@@ -84,15 +89,6 @@ export default defineConfigWithTheme<ThemeConfig>({
         gtag('config', 'UA-163994034-1');
       `
     ],
-    [
-      'script',
-      {
-        src: 'https://cdn.usefathom.com/script.js',
-        'data-site': 'XNOLWPLB',
-        'data-spa': 'auto',
-        defer: ''
-      }
-    ]
   ],
 
   themeConfig: {
@@ -106,7 +102,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
 
     editLink: {
-      repo: 'niexia/fe-tutorial',
+      repo: 'niexia/frontend-tutorial',
       text: 'Edit this page on GitHub'
     },
 

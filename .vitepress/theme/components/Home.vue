@@ -6,12 +6,12 @@
     <h1 class="tagline">
       Frontend
       <span class="accent">Tutorial</span>
-      <br />前端学习笔记
+      <br />前端学习指南
     </h1>
     <p class="description">
-      当你选择了一种语言，意味着你还选择了一组技术、一个社区 ——Joshua Bloch</p>
+      一份通俗易懂前端学习指南，帮你快速构建扎实的前端知识体系。</p>
     <p class="actions">
-      <a class="get-started" href="/fe-tutorial/javascript/programming-language/">
+      <a class="get-started" href="/frontend-tutorial/javascript/programming-language/">
         开始阅读
         <svg
           class="icon"
